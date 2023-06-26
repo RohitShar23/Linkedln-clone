@@ -3,413 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkdin clone</title>
+    <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <a href="index.html" class="logo"><img src="assets/logo.png"></a>
-            <div class="search-box">
-                <img src="assets/search.png">
-                <input type="text" placeholder="Search">
+    <div class="header">
+        <nav>
+            <img src="assest/logo.png" class="logo">
+            <div>
+                <button class="language-btn">English <img src="assest/down-icon.png"></button>
+                <button>Sign In</button>
             </div>
+        </nav>
 
-        </div>
-        <div class="navbar-center">
-            <ul>
-                <li><a href="#" class="active-link"><img src="assets/home.png"><span>Home</span></a></li>
-                <li><a href="#"><img src="assets/network.png"><span>My Network</span></a></li>
-                <li><a href="#"><img src="assets/jobs.png"><span>Jobs</span></a></li>
-                <li><a href="#"><img src="assets/message.png"><span>Messaging</span></a></li>
-                <li><a href="#"><img src="assets/notification.png"><span>Notification</span></a></li>
-            </ul>
-        </div>
-        <div class="navbar-right">
-            <div class="online">
-                <img src="assets/user-1.1.jpg" class="nav-profile-img" onclick="toggleMenu()">
-                </div>
-            </div>
-       <!-- --------------------profile-drop-down-menu------------------------- -->
-       <div class="profile-menu-wrap" id="profileMenu">
-        <div class="profile-menu">
-            <div class="user-info">
-                <img src="assets/user-1.1.jpg">
-                <div>
-                    <h3> Rohit Kumar Sharma </h3>
-                    <a href="profile.html"> See your profile </a>
-                </div>
-            </div>
-            <hr>
-            <a href="#" class="profile-menu-link">
-                <img src="assets/feedback.png">
-                <p>Give Feedback</p>
-                <span>></span>
-            </a>
-            <a href="#" class="profile-menu-link">
-                <img src="assets/setting.png">
-                <p>Settings & Privacy</p>
-                <span>></span>
-            </a>
-            <a href="#" class="profile-menu-link">
-                <img src="assets/help.png">
-                <p>Help & Support</p>
-                <span>></span>
-            </a>
-            <a href="#" class="profile-menu-link">
-                <img src="assets/display.png">
-                <p>Display & Accessiblity</p>
-                <span>></span>
-            </a>
-            <a href="#" class="profile-menu-link">
-                <img src="assets/logout.png">
-                <p>Logout</p>
-                <span>></span>
-            </a>
-        </div>
-       </div>
-
-
-
-    </nav>
-
-    <!-- ------------ navbar close ------------- -->
-
-    <div class="container">
-        <div class="left-sidebar">
-            <div class="sidebar-profile-box">
-                <img src="assets/cover-pic.png" width="100%">
-                <div class="sidebar-profile-info">
-                    <img src="assets/user-1.1.jpg">
-                    <h1>Rohit Kumar Sharma</h1>
-                    <h3>web developer at Microsoft</h3>
-                    <ul>
-                        <li>Your profile views <span>52</span></li>
-                        <li>Your post views <span>700</span></li>
-                        <li>Your connection <span>200</span></li>
-                    </ul>
-            </div>
-            <div class="sidebar-profile-link">
-                <a href="#"><img src="assets/items.png">My items</a>
-                <a href="#"><img src="assets/premium.png">Try premium</a>
-            </div>
-            <div class="sidebar-activity" id="sidebarActivity">
-                <h3>RECENT</h3>
-                <a href="#"><img src="assets/recent.png"> Web development</a>
-                <a href="#"><img src="assets/recent.png"> User Interface</a>
-                <a href="#"><img src="assets/recent.png"> Online learning</a>
-                <a href="#"><img src="assets/recent.png"> Learn online</a>
-                <a href="#"><img src="assets/recent.png"> Code better</a>
-                <a href="#"><img src="assets/recent.png"> Group learning</a>
-                <h3>GROUPS</h3>
-                <a href="#"><img src="assets/group.png"> Web design Group</a>
-                <a href="#"><img src="assets/group.png"> HTML & CSS learners</a>
-                <a href="#"><img src="assets/group.png"> Python & Javascript Group</a>
-                <a href="#"><img src="assets/group.png"> Learn coding online</a>
-                <h3>HASTAG</h3>
-                <a href="#"><img src="assets/hashtag.png"> web development</a>
-                <a href="#"><img src="assets/hashtag.png"> User interface</a>
-                <a href="#"><img src="assets/hashtag.png"> online learning</a>
-                <div class="discover-more-link">
-                    <a href="#">Discover more</a>
-                </div>
-            </div>
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-singup">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started</button>
+            </form>
         </div>
 
-        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
     </div>
-        <!-- ----------------main content-------------------- -->
-        <div class="main-content">
 
-          <div class="create-post">
-            <div class="create-post-input">
-                <img src="assets/user-1.1.jpg">
-                <textarea rows="2" placeholder="Write a post"></textarea>
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
-            <div class="create-post-links">
-                <li><img src="assets/photo.png">photo</li>
-                <li><img src="assets/video.png">Video</li>
-                <li><img src="assets/event.png">Event</li>
-                <li>Post</li>
+            <div class="img-col">
+                <img src="assest/feature-1.png">
             </div>
-          </div>
-          <div class="sort-by">
-            <hr>
-            <p>Sort by: <span>top <img src="assets/down-arrow.png"></span></p>
-          </div>
-
-          <div class="post">
-            <div class="post-author">
-                <img src="assets/user-3.png">
-                <div>
-                    <h1>Benjamin Leo</h1>
-                    <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                    <small>2 hours ago</small>
-                </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="assest/feature-2.png">
             </div>
-            <p>The success of every websites depends on search engine optimisation and
-                digital marketing strategy. If you are on first page of all major search engines
-                then you are ahead among your competitors.</p>
-                <img src="assets/post-image-1.png" width="100%">
-
-                <div class="post-stats">
-                    <div>
-                        <img src="assets/thumbsup.png">
-                        <img src="assets/love.png">
-                        <img src="assets/clap.png">
-                        <span class="liked-users">Anurag das and 65 others</span>
-                    </div>
-                    <div>
-                        <span>44 comments &middot; 55 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div>
-                        <img src="assets/user-1.png" class="post-activity-user-icon">
-                        <img src="assets/down-arrow.png" class="post-activity-arrow-icon">
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/like.png">
-                        <span>like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/comment.png">
-                        <span>comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
-             </div>
-          <div class="post">
-            <div class="post-author">
-                <img src="assets/user-4.png">
-                <div>
-                    <h1>Clarence George</h1>
-                    <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                    <small>8 hours ago</small>
-                </div>
+            <div class="text-col">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
             </div>
-            <p>The success of every websites depends on search engine optimisation and
-                digital marketing strategy. If you are on first page of all major search engines
-                then you are ahead among your competitors.</p>
-                <img src="assets/post-image-2.png" width="100%">
-
-                <div class="post-stats">
-                    <div>
-                        <img src="assets/thumbsup.png">
-                        <img src="assets/love.png">
-                        <img src="assets/clap.png">
-                        <span class="liked-users">Anurag das and 65 others</span>
-                    </div>
-                    <div>
-                        <span>44 comments &middot; 55 shares</span>
-                    </div>
-                </div>
-                <div class="post-activity">
-                    <div>
-                        <img src="assets/user-1.png" class="post-activity-user-icon">
-                        <img src="assets/down-arrow.png" class="post-activity-arrow-icon">
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/like.png">
-                        <span>like</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/comment.png">
-                        <span>comment</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/share.png">
-                        <span>Share</span>
-                    </div>
-                    <div class="post-activity-link">
-                        <img src="assets/send.png">
-                        <span>Send</span>
-                    </div>
-                </div>
+           
+        </div> 
+        <div class="row">
+            <div class="text-col">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
             </div>
-            <div class="post">
-                <div class="post-author">
-                    <img src="assets/user-4.png">
-                    <div>
-                        <h1>Serge Kampf</h1>
-                        <small>Founder and CEO at Cap Gemini </small>
-                        <small>6 hours ago</small>
-                    </div>
-                </div>
-                <p>The success of every websites depends on search engine optimisation and
-                    digital marketing strategy. If you are on first page of all major search engines
-                    then you are ahead among your competitors.</p>
-                    <img src="assets/post-image-3.png" width="100%">
+            <div class="img-col">
+                <img src="assest/feature-3.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="assest/feature-4.png">
+            </div>
+            <div class="text-col">
+                <h2>Create profiles for kids</h2>
+                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+            
+        </div>
+        
+    </div>
     
-                    <div class="post-stats">
-                        <div>
-                            <img src="assets/thumbsup.png">
-                            <img src="assets/love.png">
-                            <img src="assets/clap.png">
-                            <span class="liked-users">Anurag das and 65 others</span>
-                        </div>
-                        <div>
-                            <span>44 comments &middot; 55 shares</span>
-                        </div>
-                    </div>
-                    <div class="post-activity">
-                        <div>
-                            <img src="assets/user-1.png" class="post-activity-user-icon">
-                            <img src="assets/down-arrow.png" class="post-activity-arrow-icon">
-                        </div>
-                        <div class="post-activity-link">
-                            <img src="assets/like.png">
-                            <span>like</span>
-                        </div>
-                        <div class="post-activity-link">
-                            <img src="assets/comment.png">
-                            <span>comment</span>
-                        </div>
-                        <div class="post-activity-link">
-                            <img src="assets/share.png">
-                            <span>Share</span>
-                        </div>
-                        <div class="post-activity-link">
-                            <img src="assets/send.png">
-                            <span>Send</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-author">
-                        <img src="assets/user-4.png">
-                        <div>
-                            <h1>Clarence George</h1>
-                            <small>Founder and CEO at Gellelio Group | Angel Investor</small>
-                            <small>10 hours ago</small>
-                        </div>
-                    </div>
-                    <p>The success of every websites depends on search engine optimisation and
-                        digital marketing strategy. If you are on first page of all major search engines
-                        then you are ahead among your competitors.</p>
-                        <img src="assets/post-image-4.png" width="100%">
-        
-                        <div class="post-stats">
-                            <div>
-                                <img src="assets/thumbsup.png">
-                                <img src="assets/love.png">
-                                <img src="assets/clap.png">
-                                <span class="liked-users">Anurag das and 65 others</span>
-                            </div>
-                            <div>
-                                <span>44 comments &middot; 55 shares</span>
-                            </div>
-                        </div>
-                        <div class="post-activity">
-                            <div>
-                                <img src="assets/user-1.png" class="post-activity-user-icon">
-                                <img src="assets/down-arrow.png" class="post-activity-arrow-icon">
-                            </div>
-                            <div class="post-activity-link">
-                                <img src="assets/like.png">
-                                <span>like</span>
-                            </div>
-                            <div class="post-activity-link">
-                                <img src="assets/comment.png">
-                                <span>comment</span>
-                            </div>
-                            <div class="post-activity-link">
-                                <img src="assets/share.png">
-                                <span>Share</span>
-                            </div>
-                            <div class="post-activity-link">
-                                <img src="assets/send.png">
-                                <span>Send</span>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-        <!-- -------------------right-sidebar------------------------ -->
+   <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="accordion">
+        <li>
+            <input type="radio" name="accordion" id="first">
+            <label for="first">What is Netflix?</label>
+            <div class="content">
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
 
-        <div class="right-sidebar">
-            <div class="sidebar-news">
-            <img src="assets/more.png" class="info-icon">
-            <h3>Trending News</h3>
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="second">
+            <label for="second">How much does Netflix cost?</label>
+            <div class="content">
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">Where can I watch?</label>
+            <div class="content">
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
 
-            <a href="#"> High demand for skilled manpower </a>
-            <span> 1d ago &middot; 10,934 readers </span>
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">How do I cancel?</label>
+            <div class="content">
+                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fifth">
+            <label for="fifth">What can I watch on Netflix?</label>
+            <div class="content">
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="sixth">
+            <label for="sixth">Is Netflix good for kid?</label>
+            <div class="content">
+                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
 
-            <a href="#"> Careers growing horizontally too </a>
-            <span> 19h ago &middot; 1,225 readers </span>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+            </div>
+        </li>
+    </ul>
+    <small>Ready to watch? Enter your email to create or restart your membership.</small>
+    <form class="email-singup">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Get Started</button>
+    </form>
+   </div>
 
-            <a href="#"> Less work visa for US, more for UK </a>
-            <span> 2d ago &middot; 27,290 readers </span>
+   <div class="footer">
+    <h2>Questions? Call 000-111-222-333</h2>
 
-             <a href="#"> More hiring = higher confidence? </a>
-            <span> 18h ago &middot; 8,208 readers </span>
+    <div class="row">
  
-            <a href="#"> Gautam Adani is the world's third richest </a>
-            <span> 12h ago &middot; 4,205 readers </span>
-
-            <a href="#" class="read-more-link">Read More</a>
-            </div>
-            <div class="sidebar-ad">
-                <small>Ad &middot; &middot; &middot;</small>
-                <p>Master the 5 principle of web designing</p>
-                <div>
-                    <img src="assets/user-1.1.jpg">
-                    <img src="assets/mi-logo.png">
-                </div>
-                <b>Brand and demand in xiaomi</b>
-                <a href="#" class="ad-link">Learn more</a>
-            </div>
-
-            <div class="sidebar-useful-links">
-                <a href="#">About</a>
-                <a href="#">Accessiblity</a>
-                <a href="#">Help Center</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Advertising</a>
-                <a href="#">Get the App</a>
-                <a href="#">More</a>
-
-                <div class="copyright-msg">
-                    <img src="assets/logo.png">
-                    <p>Linkedup &#169; 2022. All right reserved</p>
-                </div>
-            </div>
+        <div class="col">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
         </div>
-  
-        <script>
+        <div class="col">
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookies Prefernces</a>
+            <a href="#">Legal Notices</a>
+        </div>
+        <div class="col">
+            <a href="#">Account</a>
+            <a href="#">Ways to watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="col">
+            <a href="#">Media Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </div>
 
-            let profileMenu = document.getElementById("profileMenu");
+    </div>
+    <button class="language-btn">English <img src="assest/down-icon.png"></button>
+    <p class="copyright-txt">Netflix India</p>
 
-            function toggleMenu(){
-                profileMenu.classList.toggle("open-menu");
-            }
-        
-        </script>
 
-        <script>
-            let sideActivity = document.getElementById("sidebarActivity");
-            let moreLink = document.getElementById("showMoreLink");
-
-            function toggleActivity(){
-                sideActivity.classList.toggle("open-activity");
-
-                if(sideActivity.classList.contains("open-activity")){
-                    moreLink.innerHTML = "Show less <b>-</b>";
-                }
-                else{
-                    moreLink.innerHTML = "Show more <b>+</b>";
-                }
-            }
-        
-        
-        </script>
-        
+   </div>
+   
+   
 
 
 </body>
